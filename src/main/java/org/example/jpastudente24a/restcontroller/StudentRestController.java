@@ -33,7 +33,6 @@ public class StudentRestController {
     }
 
 
-
     @GetMapping("/students")
     public List<Student> students() {
         List<Student> students = studentRepository.findAll();
