@@ -19,6 +19,10 @@ public class StudentRestController {
     @Autowired
     StudentRepository studentRepository;
 
+    @GetMapping("/")
+    public String isRoot() {
+        return "Du er i roden";
+    }
 
     @GetMapping("/addstudent")
     public List<Student> addstudent() {
